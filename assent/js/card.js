@@ -9,10 +9,10 @@ $.ajax({
                             <div class="img">
                                 <img src="${data[i].image}" alt="">
                             </div>
-                            <h3>PRODUCTO</h3>
-                            <p>${data[i].description}</p>
-                            <p class="producto__precio">${data[i].prieceByUser}</p>
-                            <input type="button" class="btn" id="${data[i].id}" value="OFRECER MAS">
+                            <h3>${data[i].nombreProducto}</h3>
+                            <p>${data[i].descripcion}</p>
+                            <p class="producto__precio">${data[i].valorInicial}</p>
+                            <input type="button" class="btn" id="${data[i].idProducto}" value="OFRECER MAS">
                         </article>`
         })
         $("#productos").html(HTMLCard)
